@@ -63,9 +63,9 @@ advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
  {
     id: 4,
-      slug:"ALCOHOLCLINICO70%",
+      slug:"ALCOHOLCLINICO70",
     nombre: "ALCOHOL CLÍNICO 70%",
-    imagen: "/ALCOHOL-AL-70%.jpg",
+    imagen: "/ALCOHOL70.jpg",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`El Alcohol Clínico 70° es un antiséptico de alta pureza formulado especialmente para uso externo. Ideal para la desinfección de la piel, previa a inyecciones quirurgicas pequeñas.
 
@@ -80,9 +80,9 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
   },
    {
     id: 5,
-    slug: "ALCOHOLETILICO95%",
+    slug: "ALCOHOLETILICO95",
     nombre: "ALCOHOL ETÍLICO 95%",
-    imagen: "/ALCOHOL-AL-95%.jpg",
+    imagen: "/ALCOHOL95.jpg",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`El Alcohol Etílico 95° es una materia prima de alta concentración, ideal para procesos industriales, elaboración de productos cosméticos, farmacéuticos, de limpieza y sanitizantes. Su pureza garantiza un excelente desempeño en formulaciones que requieren un solvente eficiente y de rápida evaporación.`,
     almacenamiento: [
