@@ -645,7 +645,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 42,
-    slug:"MASTER CLEANER ALOE FRESH",
+    slug:"master-cleaner-aloe-fresh",
     nombre: "MASTER CLEANER ALOE FRESH, JABON PARA MANOS",
     imagen: "/JABON-ALOE-FRESH.jpg",
     descripcion:`MASTER CLEANER es un jabón líquido concentrado formulado especialmente para eliminar grasa, suciedad y bacterias sin maltratar la piel. Su fórmula antibacterial brinda una limpieza profunda y segura, ideal para el uso diario en ambientes que requieren altos estándares de higiene.
@@ -692,7 +692,7 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
      {
     id: 45,
-    slug:"SHAMPOO PARA CABELLO MENTA",
+    slug:"shampoo-menta",
     nombre: "SHAMPOO PARA CABELLO MENTA",
     imagen: "/SHAMPOO-MENTA.jpg",
     presentacion: "Galón de 3.78 Litros",
@@ -704,7 +704,7 @@ categoria: "Shampoo y acondicionadores",
   },
       {
     id: 46,
-     slug:"SHAMPOO PARA CABELLO PAPAYA",
+     slug:"shampoo-papaya",
     nombre: "SHAMPOO PARA CABELLO PAPAYA",
     imagen: "/papaya.webp",
     descripcion:`Este shampoo para cabello normal ha sido formulado para brindar una limpieza efectiva sin resecar ni dejar residuos. Su fórmula balanceada elimina impurezas del cuero cabelludo y del cabello, dejando una sensación de frescura, suavidad y ligereza desde la primera aplicación.
@@ -716,7 +716,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 47,
-     slug:"SHAMPOO PARA CABELLO ALOE VERA",
+     slug:"shampoo-aloe-vera",
     nombre: "SHAMPOO PARA CABELLO ALOE VERA",
     imagen: "/SHAMPOO-ALOE.jpg",
     presentacion: "Galón de 3.78 Litros",

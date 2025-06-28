@@ -15,21 +15,35 @@ function Galeria() {
   return (
     <div className="w-full min-h-screen px-10 py-12">
       {/* Botones */}
-      <div className="flex flex-wrap gap-3 justify-center mt-4 mb-6">
-        {categorias.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setCategoriaSeleccionada(cat)}
-            className={`font-semibold px-4 py-2 rounded-full transition ${
-              categoriaSeleccionada === cat
-                ? "bg-blue-900 text-white"
-                : "bg-white text-blue-900 hover:bg-blue-200"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+     {window.innerWidth < 768 ? (
+  <select
+    value={categoriaSeleccionada}
+    onChange={(e) => setCategoriaSeleccionada(e.target.value)}
+    className="w-full p-2 rounded text-blue-900 mb-6"
+  >
+    {categorias.map((cat) => (
+      <option key={cat} value={cat}>
+        {cat}
+      </option>
+    ))}
+  </select>
+) : (
+  <div className="flex flex-wrap gap-3 justify-center mt-4 mb-6">
+    {categorias.map((cat) => (
+      <button
+        key={cat}
+        onClick={() => setCategoriaSeleccionada(cat)}
+        className={`font-semibold px-4 py-2 rounded-full transition ${
+          categoriaSeleccionada === cat
+            ? "bg-blue-900 text-white"
+            : "bg-white text-blue-900 hover:bg-blue-200"
+        }`}
+      >
+        {cat}
+      </button>
+    ))}
+  </div>
+)}
 
       {/* Galería */}
       <div className="flex flex-wrap justify-center gap-6">
