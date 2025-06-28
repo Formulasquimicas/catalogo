@@ -21,7 +21,7 @@ function Galeria() {
       htmlFor="filtro-categoria"
       className="block mb-2 font-semibold text-white"
     >
-      Categoría
+     Buscar por Categoría
     </label>
     <select
       id="filtro-categoria"
