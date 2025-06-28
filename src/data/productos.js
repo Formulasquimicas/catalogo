@@ -4,7 +4,7 @@ const productos = [
     id: 1,
     slug: "maxi-cloro",
     nombre: "MAXI-CLORO",
-    imagen: "/Cloro.jpg",
+    imagen: "/cloro.webp",
     categoria: "Desmanchadores y limpiadores",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`Potencia, limpieza y protección en cada gota
@@ -26,9 +26,9 @@ advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
   {
     id: 2,
-    slug: "MAXI-GEL",
+    slug: "maxi-gel",
     nombre: "MAXI-GEL",
-    imagen: "/MAXI-GEL.jpg",
+    imagen: "/gel.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`MAXI GEL es un gel antibacterial para manos formulado con un 70% de alcohol, ideal para eliminar el 99.9% de virus, bacterias y gérmenes en segundos. Su poderosa fórmula ha sido desarrollada para combatir agentes como el H1N1 y el coronavirus, ofreciendo una higiene efectiva sin necesidad de enjuague.
 Su textura ligera permite una fácil aplicación y secado rápido, dejando tus manos limpias y seguras en todo momento. Perfecto para oficinas, comercios, escuelas, clínicas, hogares y cualquier entorno que requiera altos estándares de desinfección.`,
@@ -45,9 +45,9 @@ modoDeUso:[
   },
   {
     id: 3,
-     slug:"CLEANER-1",
+     slug:"cleaner1",
     nombre: "CLEANER 1, LIMPIADOR DE VIDRIOS",
-    imagen: "/CLEANER-1.jpg",
+    imagen: "/cleaner1.webp",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`CLEANER 1 es un limpiador especializado con fórmula mejorada que deja tus superficies de vidrio completamente limpias y sin marcas. Su acción rápida elimina polvo, grasa, huellas y suciedad en segundos, dejando un acabado brillante y sin residuos.`,
     modoDeUso:[
@@ -63,9 +63,9 @@ advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
  {
     id: 4,
-      slug:"ALCOHOLCLINICO70",
+      slug:"alcohol70",
     nombre: "ALCOHOL CLÍNICO 70%",
-    imagen: "/ALCOHOL70.jpg",
+    imagen: "/alcohol70.webp",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`El Alcohol Clínico 70° es un antiséptico de alta pureza formulado especialmente para uso externo. Ideal para la desinfección de la piel, previa a inyecciones quirurgicas pequeñas.
 
@@ -80,9 +80,9 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
   },
    {
     id: 5,
-    slug: "ALCOHOLETILICO95",
+    slug: "alcohol95",
     nombre: "ALCOHOL ETÍLICO 95%",
-    imagen: "/ALCOHOL95.jpg",
+    imagen: "/alcohol95.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`El Alcohol Etílico 95° es una materia prima de alta concentración, ideal para procesos industriales, elaboración de productos cosméticos, farmacéuticos, de limpieza y sanitizantes. Su pureza garantiza un excelente desempeño en formulaciones que requieren un solvente eficiente y de rápida evaporación.`,
     almacenamiento: [
@@ -94,9 +94,9 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
   },
    {
     id: 6,
-    slug: "ALUM",
+    slug: "alum",
     nombre: "ALUM, LIMPIADOR DE ALUMINIO",
-    imagen: "/Alum.jpg",
+    imagen: "/alum.webp",
      descripcion:`ALUM es un limpiador profesional formulado exclusivamente para materiales y equipos de aluminio y acero inoxidable. Su acción poderosa elimina grasa Y residuos industriales, restaurando el brillo natural del metal sin dañarlo.
      
      ⚠️Importante: Este producto no debe aplicarse en otros materiales que no sean de aluminio, ya que puede causar manchas o daños irreversibles. Ideal para cocinas industriales, talleres, fábricas, y cualquier entorno donde se requiera el mantenimiento de piezas de aluminio o acero inoxidable.`,
@@ -120,9 +120,9 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
   },
    {
     id: 7,
-    slug: "CLASS",
+    slug: "class",
     nombre: "CLASS CERA LIQUIDA",
-    imagen: "/CLASS.jpg",
+    imagen: "/class.webp",
     presentacion: "Galón de 3.78 Litros",
     descripcion:"Class es una cera liquida que al ser aplicada a los pisos les proporciona un brillo transparente, uniforme y resistente, dejando sus pisos con una capa protectora, la cual permanece por varias semanas",
     modoDeUso:["El piso deberá ser limpiado completamente.",
@@ -134,9 +134,9 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
   },
    {
     id: 8,
-    slug:"COMBUSTOL",
+    slug:"combustol",
     nombre: "COMBUSTOL",
-    imagen: "/COMBUSTOL.jpg",
+    imagen: "/combustol.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`COMBUSTOL es un líquido especialmente formulado para el encendido de quemadores, estufas industriales, parrillas y hornillas de cocina. Gracias a su composición controlada, permite un encendido rápido, uniforme y seguro, facilitando el arranque eficiente de equipos que utilizan flama abierta.
 Es ideal para uso en comedores, restaurantes, ferias y entornos industriales, donde se requiere un producto confiable para mantener la operación continua y segura de los quemadores.`,
@@ -150,9 +150,9 @@ Es ideal para uso en comedores, restaurantes, ferias y entornos industriales, do
   },
    {
     id: 9,
-    slug:"FAST-MULTILIMPIADOR",
+    slug:"fast-multilimpiador",
     nombre: "FAST MULTILIMPIADOR, DESENGRASANTE COCINA",
-    imagen: "/FAST-MULTILIMPIADOR.jpg",
+    imagen: "/multilimpiador.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`FAST MULTILIMPIADOR es un potente desengrasante y limpiador multiusos diseñado para enfrentar las tareas más exigentes en cocinas, comercios, oficinas e industrias. Su fórmula concentrada remueve con facilidad grasa acumulada, suciedad pesada y residuos difíciles, dejando las superficies limpias y frescas.
 
@@ -163,9 +163,9 @@ Es ideal para la limpieza profunda de pisos, viniles, estufas, refrigeradoras, z
   },
    {
     id: 10,
-    slug:"KRAM",
+    slug:"kram",
     nombre: "KRAM DESENGRASANTE",
-    imagen: "/Kram.jpg",
+    imagen: "/kram.webp",
      descripcion:`KRAM es un desengrasante industrial formulado especialmente para eliminar grasa pesada, aceite quemado, residuos de combustibles y suciedad adherida en equipos mecánicos y superficies metálicas. Su fórmula concentrada actúa con gran efectividad incluso en las condiciones más exigentes del sector automotriz e industrial.
 
 Ideal para la limpieza profunda de motores de carros, maquinaria pesada, piezas metálicas, talleres y áreas de mantenimiento, KRAM garantiza resultados profesionales en poco tiempo.`,
@@ -182,9 +182,9 @@ Ideal para la limpieza profunda de motores de carros, maquinaria pesada, piezas 
   },
    {
     id: 11,
-     slug:"MASTER-CLEANER-CHERRY",
+     slug:"master-cleaner-cherry",
     nombre: "MASTER CLEANER CHERRY, JABÓN PARA MANOS",
-    imagen: "/Master-Cleaner-Cherry.jpg",
+    imagen: "/jaboncherry.webp",
    descripcion:`MASTER CLEANER es un jabón líquido concentrado formulado especialmente para eliminar grasa, suciedad y bacterias sin maltratar la piel. Su fórmula antibacterial brinda una limpieza profunda y segura, ideal para el uso diario en ambientes que requieren altos estándares de higiene.
 
 Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industriales, talleres, oficinas, escuelas, baños públicos y hogares. Deja las manos limpias, frescas y protegidas.`,
@@ -199,9 +199,9 @@ presentacion: "Galón de 3.78 Litros",
   },
    {
     id: 12,
-    slug: "MASTER-FOAM",
+    slug: "master-foam",
     nombre: "MASTER FOAM, SHAMPOO ALFOMBRA",
-    imagen: "/MASTER-FOAM.jpg",
+    imagen: "/masterfoam.webp",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`MASTER FOAM es un shampoo especializado diseñado para la limpieza profunda de tapicería, asientos, alfombras y superficies textiles. Su fórmula espumosa elimina eficazmente manchas, grasa, suciedad y malos olores sin dañar los tejidos ni alterar los colores originales.`,
     modoDeUso:["Combine una parte de agua.",
@@ -229,9 +229,9 @@ Puede usarse en hogares, escuelas, oficinas, industrias y cualquier espacio que 
   },
    {
     id: 14,
-    slug:"PLATOX",
+    slug:"platox",
     nombre: "PLATOX, JABON PARA LOSA",
-    imagen: "/Platox.jpg",
+    imagen: "/platox.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`PLATOX es un jabón líquido concentrado especialmente formulado para eliminar grasa, restos de comida y suciedad en platos, vasos, cubiertos y utensilios de cocina. Su fórmula espumosa rinde más, limpia a profundidad y deja un acabado reluciente sin residuos.
 
@@ -245,9 +245,9 @@ categoria: "Jabones",
   },
    {
     id: 15,
-    slug:"STAR",
+    slug:"star",
     nombre: "STAR, DESMANCHADOR",
-    imagen: "/STAR.jpg",
+    imagen: "/star.webp",
     presentacion: "Galón de 3.78 Litros",
     descripcion:`STAR es un poderoso limpiador líquido formulado especialmente para remover manchas difíciles, residuos de sarro y suciedad incrustada en servicios sanitarios, lavabos, pisos blancos y cerámica. Su fórmula avanzada penetra en profundidad, dejando las superficies brillantes, desinfectadas y con un aroma fresco.
 
@@ -293,9 +293,9 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
   {
     id: 18,
-      slug:"RIBBON",
+      slug:"ribbon",
     nombre: "RIBBON, SHAMPOO CARRO",
-    imagen: "/Ribbon.jpg",
+    imagen: "/ribbon.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`RIBBON es un shampoo automotriz concentrado diseñado para limpiar eficazmente la carrocería de vehículos sin afectar su brillo ni dañar la pintura. Su fórmula especializada remueve suciedad, polvo, grasa ligera y residuos del camino dejando el auto reluciente y protegido.
 
@@ -310,9 +310,9 @@ categoria: "Car Wash",
   },
   {
     id: 19,
-     slug:"SUAVIKING-GIRASOL",
+     slug:"suaviking-girasol",
     nombre: "SUAVIKING GIRASOL, SUAVIZANTE",
-    imagen: "/SUAVIKING-GIRASOL.jpg",
+    imagen: "/suavizantegirasol.png",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SUAVIKING es un suavizante líquido concentrado diseñado para dejar todo tipo de ropa suave, esponjosa y con un aroma agradable. Su fórmula especial protege las fibras textiles, reduce la estática y facilita el planchado, brindando una sensación fresca y confortable en cada uso.
 
@@ -326,9 +326,9 @@ categoria: "Suavizantes",
   },
   {
     id: 20,
-    slug:"SILICONA",
+    slug:"silicona",
     nombre: "SILICONA, BRILLO PARA TABLERO",
-    imagen: "/SILICONA.jpg",
+    imagen: "/silicona.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SILICONA es un abrillantador líquido de alto rendimiento diseñado para pulir, proteger y resaltar el brillo natural de superficies como tableros, tapicería de vinil, cuero sintético y plásticos interiores. Su fórmula crea una capa protectora que repele el polvo y la humedad, prolongando la vida útil de los materiales tratados.`,
      usos: [
@@ -341,9 +341,9 @@ categoria: "Suavizantes",
   },
    {
     id: 21,
-     slug:"BRILLANT",
+     slug:"brillant",
     nombre: "BRILLANT, BRILLO PARA LLANTAS",
-    imagen: "/BRILLO.jpg",
+    imagen: "/brillo.webp",
     descripcion:`BRILLANT es un producto especialmente formulado para devolver el brillo, color y apariencia renovada a las llantas de tu vehículo. Su fórmula crea una capa protectora que repele el polvo, el agua y la suciedad, dejando un acabado limpio, oscuro y con efecto húmedo que resalta el estilo del auto.
 
 Ideal para uso en talleres, autolavados, detallado automotriz y usuarios particulares que desean mantener sus llantas como nuevas.`,
@@ -372,9 +372,9 @@ presentacion: "Galón de 3.78 Litros",
   },
    {
     id: 23,
-    slug:"TENAZ ALOE FRESH",
+    slug:"tenaz-aloe-fresh",
     nombre: "TENAZ ALOE FRESH, JABON PARA ROPA",
-    imagen: "/TENAZ-ALOE-FRESH.jpg",
+    imagen: "/tenazaloe.webp",
     descripcion:`TENAZ es un jabón líquido concentrado especialmente formulado para lavadoras industriales y domésticas, ideal para remover la suciedad, manchas y grasa en todo tipo de ropa. Su poderosa acción limpiadora actúa incluso en ciclos cortos, dejando las prendas limpias y con aroma fresco.
 
 Perfecto para hoteles, lavanderías, hospitales, hogares y centros de lavado, TENAZ rinde más y ofrece resultados impecables en cada carga.`,
@@ -387,9 +387,9 @@ Perfecto para hoteles, lavanderías, hospitales, hogares y centros de lavado, TE
   },
   {
     id: 24,
-    slug:"TENAZ-MANZANA",
+    slug:"tenaz-manzana",
     nombre: "TENAZ MANZANA, JABON PARA ROPA",
-    imagen: "/TENAZ-MANZANA.jpg",
+    imagen: "/tenazmanzana.webp",
    descripcion:`TENAZ es un jabón líquido concentrado especialmente formulado para lavadoras industriales y domésticas, ideal para remover la suciedad, manchas y grasa en todo tipo de ropa. Su poderosa acción limpiadora actúa incluso en ciclos cortos, dejando las prendas limpias y con aroma fresco.
 
 Perfecto para hoteles, lavanderías, hospitales, hogares y centros de lavado, TENAZ rinde más y ofrece resultados impecables en cada carga.`,
@@ -402,9 +402,9 @@ Perfecto para hoteles, lavanderías, hospitales, hogares y centros de lavado, TE
   },
   {
     id: 25,
-    slug:"MASTER CLEANER MANGO",
+    slug:"master-cleaner-mango",
     nombre: "MASTER CLEANER MANGO, JABON PARA MANOS",
-    imagen: "/JABON-MANGO.jpg",
+    imagen: "/jabonmango.webp",
     descripcion:`MASTER CLEANER es un jabón líquido concentrado formulado especialmente para eliminar grasa, suciedad y bacterias sin maltratar la piel. Su fórmula antibacterial brinda una limpieza profunda y segura, ideal para el uso diario en ambientes que requieren altos estándares de higiene.
 
 Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industriales, talleres, oficinas, escuelas, baños públicos y hogares. Deja las manos limpias, frescas y protegidas.`,
@@ -419,9 +419,9 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
   {
     id: 26,
-    slug:"MASTER CLEANER LIMON",
+    slug:"master-cleaner-limon",
     nombre: "MASTER CLEANER LIMON, JABON PARA MANOS",
-    imagen: "/JABON-LIMON.jpg",
+    imagen: "/jabonlimon.webp",
     descripcion:`MASTER CLEANER es un jabón líquido concentrado formulado especialmente para eliminar grasa, suciedad y bacterias sin maltratar la piel. Su fórmula antibacterial brinda una limpieza profunda y segura, ideal para el uso diario en ambientes que requieren altos estándares de higiene.
 
 Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industriales, talleres, oficinas, escuelas, baños públicos y hogares. Deja las manos limpias, frescas y protegidas.`,
@@ -453,9 +453,9 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
   {
     id: 28,
-      slug:"CANINOS",
+      slug:"caninos",
     nombre: "CANINOS, SHAMPOO PARA PERRO",
-    imagen: "/SHAMPOO-PERRO.jpg",
+    imagen: "/caninos.webp",
     descripcion:`CANINOS está diseñado especificamente para que su mascota al ser bañado logre que su pelaje quede suave, terso y con brillo dejando agradable aroma a cereza.`,
      modoDeUso:["Moje completamente el CAN.",
 "Vierta una pequeña cantidad de CANINOS en el cuerpo del CAN.",
@@ -469,9 +469,9 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
    {
     id: 29,
-      slug:"SUAVIKING TROPICAL",
+      slug:"suaviking-tropical",
     nombre: "SUAVIKING TROPICAL, SUAVIZANTE",
-    imagen: "/SUAVIKING-TROPICAL.jpg",
+    imagen: "/suavizantetropical.png",
      descripcion:`SUAVIKING es un suavizante líquido concentrado diseñado para dejar todo tipo de ropa suave, esponjosa y con un aroma agradable. Su fórmula especial protege las fibras textiles, reduce la estática y facilita el planchado, brindando una sensación fresca y confortable en cada uso.
 
 Perfecto para lavanderías, hogares, hoteles y centros de lavado que buscan resultados consistentes y profesionales.`,
@@ -485,9 +485,9 @@ Perfecto para lavanderías, hogares, hoteles y centros de lavado que buscan resu
   },
    {
     id: 30,
-     slug:"SUAVIKING FLOR DE LUNA",
+     slug:"suavizante-flor",
     nombre: "SUAVIKING FLOR DE LUNA, SUAVIZANTE",
-    imagen: "/SUAVIKING-FLOR.jpg",
+    imagen: "/suavizanteflor.webp",
      descripcion:`SUAVIKING es un suavizante líquido concentrado diseñado para dejar todo tipo de ropa suave, esponjosa y con un aroma agradable. Su fórmula especial protege las fibras textiles, reduce la estática y facilita el planchado, brindando una sensación fresca y confortable en cada uso.
 
 Perfecto para lavanderías, hogares, hoteles y centros de lavado que buscan resultados consistentes y profesionales.`,
@@ -501,9 +501,9 @@ Perfecto para lavanderías, hogares, hoteles y centros de lavado que buscan resu
   },
   {
     id: 310,
-     slug:"SANILIZ AYLEN",
+     slug:"saniliz-aylen",
     nombre: "SANILIZ AYLEN",
-    imagen: "/SANILIZ-AYLEN.jpg",
+    imagen: "/aylen.webp",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
 Perfecto para hogares, oficinas, escuelas, hoteles y todo lugar que requiera limpieza profunda con toque perfumado.`,
@@ -513,7 +513,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
  {
     id: 31,
-    slug:"SANILIZ BLUE",
+    slug:"saniliz-blue",
     nombre: "SANILIZ BLUE",
     imagen: "/SANILIZ-BLUE.jpg",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
@@ -525,7 +525,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 32,
-    slug:"SANILIZ BOSQUES",
+    slug:"saniliz-bosques",
     nombre: "SANILIZ BOSQUES",
     imagen: "/SANILIZ-BOSQUES.jpg",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
@@ -537,7 +537,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 33,
-    slug:"SANILIZ CANELA",
+    slug:"saniliz-canela",
     nombre: "SANILIZ CANELA",
     imagen: "/SANILIZ-CANELA.jpg",
     presentacion: "Galón de 3.78 Litros",
@@ -549,9 +549,9 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
      {
     id: 34,
-    slug:"SANILIZ FRUTAL",
+    slug:"saniliz-frutal",
     nombre: "SANILIZ FRUTAL",
-    imagen: "/SANILIZ-FRUTAL.jpg",
+    imagen: "/frutal.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
@@ -561,7 +561,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
       {
     id: 35,
-    slug:"SANILIZ CITRONELA",
+    slug:"saniliz-citronela",
     nombre: "SANILIZ CITRONELA",
     imagen: "/SANILIZ-CITRONELA.jpg",
     presentacion: "Galón de 3.78 Litros",
@@ -573,7 +573,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
        {
     id: 36,
-    slug:"SANILIZ LIMON",
+    slug:"saniliz-limon",
     nombre: "SANILIZ LIMON",
     imagen: "/SANILIZ-LIMON.jpg",
     presentacion: "Galón de 3.78 Litros",
@@ -585,7 +585,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 37,
-    slug:"SANILIZ MANZANA",
+    slug:"saniliz-manzana",
     nombre: "SANILIZ MANZANA",
     imagen: "/SANILIZ-LIMON.jpg",
     presentacion: "Galón de 3.78 Litros",
@@ -597,7 +597,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 38,
-    slug:"SANILIZ MANZANA CANELA",
+    slug:"saniliz-manzana-canela",
     nombre: "SANILIZ MANZANA CANELA",
     imagen: "/SANILIZ-MANZANA-CANELA.jpg",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
@@ -609,7 +609,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 39,
-    slug:"SANILIZ MORA",
+    slug:"saniliz-mora",
     nombre: "SANILIZ MORA",
     imagen: "/SANILIZ-MORA.jpg",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
@@ -621,9 +621,9 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 40,
-    slug:"SANILIZ LAVANDA",
+    slug:"saniliz-lavanda",
     nombre: "SANILIZ LAVANDA",
-    imagen: "/SANILIZ-LAVANDA.jpg",
+    imagen: "/lavanda.webp",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
 Perfecto para hogares, oficinas, escuelas, hoteles y todo lugar que requiera limpieza profunda con toque perfumado.`,
@@ -633,9 +633,9 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
   {
     id: 41,
-    slug:"SANILIZ BAMBU",
+    slug:"saniliz-bambu",
     nombre: "SANILIZ BAMBU",
-    imagen: "/SANILIZ-BAMBU.jpg",
+    imagen: "/bambu.webp",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
 Perfecto para hogares, oficinas, escuelas, hoteles y todo lugar que requiera limpieza profunda con toque perfumado.`,
@@ -664,7 +664,7 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
     id: 43,
     slug:"BACTERIN",
     nombre: "BACTERIN",
-    imagen: "/BACTERIN.jpg",
+    imagen: "/bacterin.webp",
     descripcion:`Bactericida a base de amonio cuaternario , agente germicida, fungicida, virucida y sanitizador.
 
     Producto ideal para limpieza y desinfección de áreas de alto de trafico como ser escritorios, pasamanos, llavines, cocina, sala de espera, llantas, tuneles de desinfección, etc`,
@@ -679,7 +679,7 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
      {
     id: 44,
     slug:"MANIX",
-    nombre: "MANIX, CREMA DESENGASANTE PARA MANOS(8 LIBRAS)",
+    nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS(8 LIBRAS)",
     imagen: "/CREMA-8.jpg",
     descripcion:`MANIX es una crema limpiadora especialmente formulada para eliminar grasa pesada, aceites y suciedad industrial de las manos. Ideal para mecánicos, operarios, talleres, industrias y todo tipo de trabajo manual que exponga las manos a suciedad extrema.`,
      categoria: "Car Wash",
@@ -706,7 +706,7 @@ categoria: "Shampoo y acondicionadores",
     id: 46,
      slug:"SHAMPOO PARA CABELLO PAPAYA",
     nombre: "SHAMPOO PARA CABELLO PAPAYA",
-    imagen: "/SHAMPOO-PAPAYA.jpg",
+    imagen: "/papaya.webp",
     descripcion:`Este shampoo para cabello normal ha sido formulado para brindar una limpieza efectiva sin resecar ni dejar residuos. Su fórmula balanceada elimina impurezas del cuero cabelludo y del cabello, dejando una sensación de frescura, suavidad y ligereza desde la primera aplicación.
 
 Ideal para el uso diario, ayuda a mantener el equilibrio natural del cabello, conservando su brillo, fuerza y manejabilidad.`,
