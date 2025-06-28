@@ -1,20 +1,12 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-function ScrollToTop() {
-  const [visible, setVisible] = useState(false);
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    const amount = window.scrollY;
-    const handleScroll = () => { setVisible(window.scrollY > 300); };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  if (!visible) return null;
-  return (
-    <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg"
-      aria-label="Subir arriba"
-    >⇧</button>
-  );
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
-export default ScrollToTop;

@@ -9,12 +9,13 @@ function App() {
   return (
     <Router>
       <Navbar />
+          <ScrollToTop />
       <Routes>
         <Route path="/" element={<Galeria />} />
         <Route path="/producto/:slug" element={<ProductoDetalle />} />
       </Routes>
       <Footer />
-      <ScrollToTop />
+  
     </Router>
   );
 }
