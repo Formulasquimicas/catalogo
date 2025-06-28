@@ -23,6 +23,7 @@ function ProductoDetalle() {
  <img
   src={producto.imagen}
   alt={producto.nombre}
+   loading="lazy"
   className="w-full max-h-[800px] object-contain rounded-lg"
 />
 

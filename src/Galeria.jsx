@@ -42,6 +42,7 @@ function Galeria() {
               <img
                 src={prod.imagen}
                 alt={prod.nombre}
+                loading="lazy"
                 className="h-72 w-full object-contain bg-white p-3"
               />
               <h2 className="text-center text-blue-900 text-base md:text-lg font-semibold tracking-wide py-2 px-2">

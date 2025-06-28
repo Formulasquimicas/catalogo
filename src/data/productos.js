@@ -218,9 +218,9 @@ presentacion: "Galón de 3.78 Litros",
   },
    {
     id: 13,
-    slug: "PINE-GLID",
+    slug: "pine-glid",
     nombre: "PINE-GLID, PINO CONCENTRADO",
-    imagen: "/PINE-GLID.jpg",
+    imagen: "/pino.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`PINE-GLID es un limpiador y desinfectante concentrado a base de aceite de pino, ideal para la limpieza de pisos, baños, paredes y superficies lavables. Su fórmula elimina suciedad, bacterias y malos olores, dejando un agradable y duradero aroma a pino.
 
@@ -515,7 +515,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     id: 31,
     slug:"saniliz-blue",
     nombre: "SANILIZ BLUE",
-    imagen: "/SANILIZ-BLUE.jpg",
+    imagen: "/blue.webp",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
 Perfecto para hogares, oficinas, escuelas, hoteles y todo lugar que requiera limpieza profunda con toque perfumado.`,
@@ -599,7 +599,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     id: 38,
     slug:"saniliz-manzana-canela",
     nombre: "SANILIZ MANZANA CANELA",
-    imagen: "/SANILIZ-MANZANA-CANELA.jpg",
+    imagen: "/manzanacanela.webp",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
 Perfecto para hogares, oficinas, escuelas, hoteles y todo lugar que requiera limpieza profunda con toque perfumado.`,
@@ -662,7 +662,7 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
     {
     id: 43,
-    slug:"BACTERIN",
+    slug:"bacterin",
     nombre: "BACTERIN",
     imagen: "/bacterin.webp",
     descripcion:`Bactericida a base de amonio cuaternario , agente germicida, fungicida, virucida y sanitizador.
@@ -678,7 +678,7 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
      {
     id: 44,
-    slug:"MANIX",
+    slug:"manix",
     nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS(8 LIBRAS)",
     imagen: "/CREMA-8.jpg",
     descripcion:`MANIX es una crema limpiadora especialmente formulada para eliminar grasa pesada, aceites y suciedad industrial de las manos. Ideal para mecánicos, operarios, talleres, industrias y todo tipo de trabajo manual que exponga las manos a suciedad extrema.`,
@@ -728,7 +728,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 100,
-    slug:"PAPEL HIGIENICO 250 METROS ENCANTO",
+    slug:"papel-higienico-encanto-250",
     nombre: "PAPEL HIGIENICO JUMBO ROLL 250 METROS ENCANTO",
     imagen: "/ENCANTO250.webp",
      presentacion: "Fardo de 6 rollos",
@@ -736,7 +736,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 101,
-    slug:"PAPEL HIGIENICO 400 METROS ENCANTO",
+    slug:"papel-higienico-encanto-400",
     nombre: "PAPEL HIGIENICO JUMBO ROLL 400 METROS ENCANTO",
     imagen: "/ENCANTO400.jpg",
     presentacion: "Fardo de 6 rollos",
@@ -784,7 +784,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 107,
-     slug:"PAPEL TOALLA TISU",
+     slug:"papel-toalla-tisu",
     nombre: "PAPEL TOALLA ROLL TISU",
     imagen: "/TOALLATISU.jpg",
     presentacion: "Caja de 6 rollos",
@@ -792,7 +792,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 108,
-    slug:"PAPEL TOALLA ENCANTO",
+    slug:"papel toalla encanto",
     nombre: "PAPEL TOALLA ROLL ENCANTO",
    
     imagen: "/ENCANTO-TOALLA.webp",
@@ -801,7 +801,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 109,
-    slug:"PAPEL TOALLA  INTERFOELADO TISU",
+    slug:"papel-interfoleada",
     nombre: "PAPEL TOALLA INTERFOLEADO TISU",
     imagen: "/INTERFOLEADA.jpg",
      presentacion: "Caja de 12 paquetes",
@@ -809,7 +809,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 110,
-    slug:"BOLSA DEL HOGAR",
+    slug:"bolsa-hogar",
     nombre: "BOLSA PARA BASURA ROLLO NEGRA  23X32",
     imagen: "/HOGAR.webp",
     presentacion: "Rollo de 50 bolsas",
@@ -817,7 +817,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
    {
     id: 111,
-    slug:"BOLSA DEL JARDIN",
+    slug:"bolsa-jardin",
     nombre: "BOLSA PARA BARRIL ROLLO NEGRA 36X57",
     imagen: "/JARDIN.jpg",
     presentacion: "Rollo de 10 bolsas",
@@ -825,7 +825,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
   {
     id: 112,
-    slug:"BOLSA DEL PAPELERA",
+    slug:"bolsa-papelera",
     nombre: "BOLSA PARA PAPELERA ROLLO BLANCA 18X24",
     imagen: "/PAPELERA.webp",
     presentacion: "Rollo de 50 bolsas",
