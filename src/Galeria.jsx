@@ -15,18 +15,27 @@ function Galeria() {
   return (
     <div className="w-full min-h-screen px-10 py-12">
       {/* Botones */}
-     {window.innerWidth < 768 ? (
-  <select
-    value={categoriaSeleccionada}
-    onChange={(e) => setCategoriaSeleccionada(e.target.value)}
-    className="w-full p-2 rounded text-blue-900 mb-6"
-  >
-    {categorias.map((cat) => (
-      <option key={cat} value={cat}>
-        {cat}
-      </option>
-    ))}
-  </select>
+{window.innerWidth < 768 ? (
+  <>
+    <label
+      htmlFor="filtro-categoria"
+      className="block mb-2 font-semibold text-white"
+    >
+      Categoría
+    </label>
+    <select
+      id="filtro-categoria"
+      value={categoriaSeleccionada}
+      onChange={(e) => setCategoriaSeleccionada(e.target.value)}
+      className="w-full p-2 rounded text-blue-900 mb-6"
+    >
+      {categorias.map((cat) => (
+        <option key={cat} value={cat}>
+          {cat}
+        </option>
+      ))}
+    </select>
+  </>
 ) : (
   <div className="flex flex-wrap gap-3 justify-center mt-4 mb-6">
     {categorias.map((cat) => (
