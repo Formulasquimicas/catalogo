@@ -436,9 +436,9 @@ Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industrial
   },
   {
     id: 27,
-      slug:"MASTER CLEANER MANZANA",
+      slug:"master-cleaner-manzana",
     nombre: "MASTER CLEANER MANZANA, JABON PARA MANOS",
-    imagen: "/JABON-MANZANA.jpg",
+    imagen: "/jabonlimon.webp",
     descripcion:`MASTER CLEANER es un jabón líquido concentrado formulado especialmente para eliminar grasa, suciedad y bacterias sin maltratar la piel. Su fórmula antibacterial brinda una limpieza profunda y segura, ideal para el uso diario en ambientes que requieren altos estándares de higiene.
 
 Gracias a su poder desengrasante y suavidad, es perfecto para cocinas industriales, talleres, oficinas, escuelas, baños públicos y hogares. Deja las manos limpias, frescas y protegidas.`,
