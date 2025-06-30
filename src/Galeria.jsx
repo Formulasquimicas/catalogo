@@ -13,7 +13,7 @@ function Galeria() {
       : productos.filter(p => p.categoria === categoriaSeleccionada);
 
   return (
-    <div className="w-full min-h-screen px-10 py-12">
+    <div className="w-full min-h-screen px-10 py-12  bg-white">
       {/* Botones */}
 {window.innerWidth < 768 ? (
   <>
@@ -59,14 +59,14 @@ function Galeria() {
         {productosFiltrados.map((prod, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform w-[230px] sm:w-[260px] md:w-[280px]"
+            className="bg-gray-100 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform w-[230px] sm:w-[260px] md:w-[280px]"
           >
             <Link to={`/producto/${prod.slug}`} className="block w-full h-full">
               <img
                 src={prod.imagen}
                 alt={prod.nombre}
                 loading="lazy"
-                className="h-72 w-full object-contain bg-white p-3"
+                className="h-72 w-full object-contain bg-gray-100 p-3"
               />
               <h2 className="text-center text-blue-900 text-base md:text-lg font-semibold tracking-wide py-2 px-2">
                 {prod.nombre}

@@ -269,9 +269,9 @@ categoria: "Desmanchadores y limpiadores",
   },
   {
     id: 16,
-      slug:"SANILIZ-VIDA",
+      slug:"saniliz-vida",
     nombre: "SANILIZ VIDA",
-    imagen: "/SANILIZ-VIDA.jpg",
+    imagen: "/cherry.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
@@ -281,9 +281,9 @@ categoria: "Desinfectantes para pisos",
   },
 {
     id: 17,
-    slug:"SANILIZ-CHERRY",
+    slug:"saniliz-cherry",
     nombre: "SANILIZ CHERRY",
-    imagen: "/SANILIZ-CHERRY.jpg",
+    imagen: "/cherry.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 
@@ -563,7 +563,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     id: 35,
     slug:"saniliz-citronela",
     nombre: "SANILIZ CITRONELA",
-    imagen: "/SANILIZ-CITRONELA.jpg",
+    imagen: "/manzanacanela.webp",
     presentacion: "Galón de 3.78 Litros",
      descripcion:`SANILIZ es un poderoso desinfectante concentrado con efecto aromatizante y acción bactericida, ideal para limpiar y desodorizar ambientes con un solo producto. Su fórmula está diseñada para eliminar gérmenes, neutralizar malos olores y dejar una fragancia agradable y duradera en pisos, baños, sanitarios, lavabos, áreas comunes y superficies lavables.
 

@@ -10,16 +10,16 @@ function ProductoDetalle() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-[#0f172a] text-white px-4 py-10">
+    <div className="w-full min-h-screen bg-white text-white px-4 py-10">
       <div className="max-w-5xl mx-auto">
 
         <Link
           to="/"
-          className="inline-block mb-6 px-5 py-2 rounded-full bg-white text-blue-900 font-semibold hover:bg-blue-100 transition"
+          className="inline-block mb-6 px-5 py-2 rounded-full bg-gray-100 text-blue-900 font-semibold hover:bg-blue-100 transition"
         >
           ← Volver al catálogo
         </Link>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white text-blue-900 p-6 rounded-xl shadow-xl">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-gray-100 text-blue-900 p-6 rounded-xl shadow-xl">
  <img
   src={producto.imagen}
   alt={producto.nombre}
