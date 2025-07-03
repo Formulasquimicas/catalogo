@@ -130,7 +130,7 @@ Su concentración óptima de 70° permite eliminar eficazmente virus, bacterias 
  "Una vez seco frótelo con máquina pulidora o con un paño limpio y seco y obtendrá una superficie resplandeciente."
     ],
     advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños.",
-    categoria: "Cera liquida",
+    categoria: "Abrillantadores para casa",
   },
    {
     id: 8,
@@ -726,6 +726,22 @@ Ideal para el uso diario, ayuda a mantener el equilibrio natural del cabello, co
 advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños.`, 
      categoria: "Shampoo y acondicionadores",
   },
+
+    {
+    id: 48,
+    slug: "aceite-rojo",
+    nombre: "ACEITE ROJO",
+    imagen: "/aceiterojo.png",
+    presentacion: "Galón de 3.78 Litros",
+    descripcion:"Producto especializado en dar brillop a muebles dejando un aroma agradable y un acabado de limpieza y brillo",
+    modoDeUso:["Limpie el polvo o cualquier suceidad de la superficie.",
+"Aplique una pequeña cantidaden una franela.",
+ "Frote la superficie hasta obterner un brillo uniforme."
+    ],
+    advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños.",
+    categoria: "Abrillantadores para casa",
+  },
+
     {
     id: 100,
     slug:"papel-higienico-encanto-250",
@@ -830,6 +846,62 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     imagen: "/PAPELERA.webp",
     presentacion: "Rollo de 50 bolsas",
      categoria: "Bolsas para Basura",
+  },
+   {
+    id: 113,
+    slug:"trapeador-kika",
+    nombre: "TRAPEADOR KIKA",
+    imagen: "/trapeadorkika.webp",
+    presentacion: "Palo y gancho incluido",
+     categoria: "Accesorios para limpieza",
+  },
+   {
+    id: 114,
+    slug:"paste-scotchbrite",
+    nombre: "PASTE SCOTCH BRITE",
+    imagen: "/scotchbrite.webp",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+    {
+    id: 115,
+    slug:"escoba-barremas",
+    nombre: "ESCOBA BARREMAS",
+    imagen: "/barremas.jpg",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+     {
+    id: 116,
+    slug:"cepillo-sin-base",
+    nombre: "CEPILLO SIN BASE",
+    imagen: "/cepillosinbase.webp",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+   {
+    id: 117,
+    slug:"mecha-campanita",
+    nombre: "MECHA #20 CAMPANITA",
+    imagen: "/mechacampanita.webp",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+   {
+    id: 118,
+    slug:"guante-latex",
+    nombre: "GUANTE TRUPER",
+    imagen: "/guante.jpg",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+     {
+    id: 119,
+    slug:"ultra-klin",
+    nombre: "DETERGENTE ULTRA KLIN 2.5 KILOS",
+    imagen: "/ultraklin.jpg",
+    presentacion: "Bolsa de 2.5 kilos",
+     categoria: "Detergente en polvo",
   },
   // Agrega más productos...
 ];
