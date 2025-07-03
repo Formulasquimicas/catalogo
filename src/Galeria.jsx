@@ -14,31 +14,54 @@ function Galeria() {
 
   return (
     <div className="w-full min-h-screen px-4 py-8 bg-white">
-      {/* Filtros de categoría */}
-      <div className="flex flex-wrap justify-center gap-3 mb-6">
-        {categorias.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setCategoriaSeleccionada(cat)}
-            className={`font-semibold px-4 py-2 rounded-full transition ${
-              categoriaSeleccionada === cat
-                ? "bg-blue-900 text-white"
-                : "bg-white text-blue-900 hover:bg-blue-200"
-            }`}
+      {/* Categorías */}
+      {window.innerWidth < 768 ? (
+        <>
+          <label
+            htmlFor="filtro-categoria"
+            className="block mb-2 font-semibold text-blue-900"
           >
-            {cat}
-          </button>
-        ))}
-      </div>
+            Categoría
+          </label>
+          <select
+            id="filtro-categoria"
+            value={categoriaSeleccionada}
+            onChange={(e) => setCategoriaSeleccionada(e.target.value)}
+            className="w-full p-2 rounded border border-blue-900 text-blue-900 mb-6"
+          >
+            {categorias.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
+        </>
+      ) : (
+        <div className="flex flex-wrap justify-center gap-3 mt-4 mb-6">
+          {categorias.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setCategoriaSeleccionada(cat)}
+              className={`font-semibold px-4 py-2 rounded-full transition ${
+                categoriaSeleccionada === cat
+                  ? "bg-blue-900 text-white"
+                  : "bg-white text-blue-900 hover:bg-blue-200"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      )}
 
-      {/* Galería en grid responsivo */}
+      {/* Productos en grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {productosFiltrados.map((prod, index) => (
           <div
             key={index}
             className="bg-gray-100 rounded-xl shadow hover:scale-105 transition-transform"
           >
-            <Link to={`/producto/${prod.slug}`}>
+            <Link to={/producto/${prod.slug}}>
               <img
                 src={prod.imagen}
                 alt={prod.nombre}
