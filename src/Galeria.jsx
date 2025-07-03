@@ -21,7 +21,7 @@ function Galeria() {
             htmlFor="filtro-categoria"
             className="block mb-2 font-semibold text-blue-900"
           >
-            Categoría
+            Buscar por Categoríaa
           </label>
           <select
             id="filtro-categoria"
@@ -61,7 +61,7 @@ function Galeria() {
             key={index}
             className="bg-gray-100 rounded-xl shadow hover:scale-105 transition-transform"
           >
-            <Link to={/producto/${prod.slug}}>
+            <Link to={`/producto/${prod.slug}`}>
               <img
                 src={prod.imagen}
                 alt={prod.nombre}
