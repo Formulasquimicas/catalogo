@@ -927,6 +927,22 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     presentacion: "unidad",
      categoria: "Desodorante en Aerosol",
   },
+  {
+    id: 123,
+    slug:"cepillo-con-base",
+    nombre: "CEPILLO PARA SANITARIO CON BASE",
+    imagen: "/base.png",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+   {
+    id: 124,
+    slug:"cepillo-para-pila",
+    nombre: "CEPILLO PARA PILA",
+    imagen: "/pila.jpg",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
   // Agrega más productos...
 ];
 
