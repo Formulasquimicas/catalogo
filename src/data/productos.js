@@ -741,7 +741,20 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     advertencias:"Dañino si es ingerido. Mantengase fuera del alcance de los niños.",
     categoria: "Abrillantadores para casa",
   },
-
+    {
+    id: 49,
+    slug:"manix",
+    nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS(2 LIBRAS)",
+    imagen: "/crema2.jpg",
+    descripcion:`MANIX es una crema limpiadora especialmente formulada para eliminar grasa pesada, aceites y suciedad industrial de las manos. Ideal para mecánicos, operarios, talleres, industrias y todo tipo de trabajo manual que exponga las manos a suciedad extrema.`,
+     categoria: "Car Wash",
+      presentacion: "Tarro de 2 libras",
+       advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños.`,
+        almacenamiento: [
+  "Mantener debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca se debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho papel.",
+  "Debe de almacenarse en áreas limpias, secas ventiladas y protegidas de la luz."
+],
+  },
     {
     id: 100,
     slug:"papel-higienico-encanto-250",
@@ -943,6 +956,15 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     presentacion: "unidad",
      categoria: "Accesorios para limpieza",
   },
+  {
+    id: 125,
+    slug:"tri-cloro-ajax",
+    nombre: "TRI-CLORO EN POLVO AJAX",
+    imagen: "/ajax.webp",
+    presentacion: "bote de  600 gramos",
+     categoria: "Desmanchadores y limpiadores",
+  },
+
   // Agrega más productos...
 ];
 
