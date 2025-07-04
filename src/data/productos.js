@@ -745,7 +745,7 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     id: 49,
     slug:"manix",
     nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS(2 LIBRAS)",
-    imagen: "/crema2.jpg",
+    imagen: "/crema2.jpeg",
     descripcion:`MANIX es una crema limpiadora especialmente formulada para eliminar grasa pesada, aceites y suciedad industrial de las manos. Ideal para mecánicos, operarios, talleres, industrias y todo tipo de trabajo manual que exponga las manos a suciedad extrema.`,
      categoria: "Car Wash",
       presentacion: "Tarro de 2 libras",
