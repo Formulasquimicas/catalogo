@@ -903,6 +903,30 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
     presentacion: "Bolsa de 2.5 kilos",
      categoria: "Detergente en polvo",
   },
+     {
+    id: 120,
+    slug:"paste-scotchbrite-esponja",
+    nombre: "PASTE SCOTCH BRITE CON ESPONJA",
+    imagen: "/esponja.jpg",
+    presentacion: "unidad",
+     categoria: "Accesorios para limpieza",
+  },
+  {
+    id: 121,
+    slug:"pastilla-emer",
+    nombre: "PASTILLA EMER",
+    imagen: "/emer.png",
+    presentacion: "unidad",
+     categoria: "Pastillas para sanitarios",
+  },
+  {
+    id: 122,
+    slug:"glade",
+    nombre: "DESODORANTE EN AEROSOL GLADE",
+    imagen: "/glade.webp",
+    presentacion: "unidad",
+     categoria: "Desodorante en Aerosol",
+  },
   // Agrega más productos...
 ];
 
