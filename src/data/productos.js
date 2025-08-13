@@ -821,10 +821,10 @@ advertencias:`Dañino si es ingerido. Mantengase fuera del alcance de los niños
   },
     {
     id: 108,
-    slug:"papel toalla encanto",
-    nombre: "PAPEL TOALLA ROLL ENCANTO",
+    slug:"papel-toalla-nova",
+    nombre: "PAPEL TOALLA ROLL NOVA",
    
-    imagen: "/ENCANTO-TOALLA.webp",
+    imagen: "/toallanova.png",
     presentacion: "Fardo de 2 rollos",
      categoria: "Papel Toalla",
   },
