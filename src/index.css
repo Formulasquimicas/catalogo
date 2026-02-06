@@ -1,0 +1,19 @@
+/* src/index.css */
+
+/* Asegura que no haya márgenes */
+/* Fondo negro y texto claro */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* negro azulado elegante */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+}
