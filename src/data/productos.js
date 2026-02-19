@@ -6,6 +6,29 @@ const productos = [
     imagen: "/alcoholc.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Alcoholes",
+     descripcion: `Alcohol clínico formulado para la limpieza y desinfección de superficies, objetos y áreas de uso frecuente. Su acción rápida ayuda a eliminar bacterias y microorganismos, dejando una sensación de higiene y frescura inmediata. Ideal para uso en hogares, oficinas, clínicas y espacios donde la limpieza es una prioridad.`,
+    advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+    almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+     modoDeUso: [
+      "Aplicar el alcohol directamente sobre la superficie o en un paño limpio.",
+"Distribuir sobre el área que se desea desinfectar.",
+
+"Dejar actuar unos segundos para permitir su acción limpiadora.",
+
+"Dejar secar naturalmente; no es necesario enjuagar."
+    ],
+     usos: [
+      "Desinfección de mesas, escritorios y superficies de trabajo.",
+
+"Limpieza de objetos de uso frecuente (teléfonos, manijas, herramientas)",
+
+"Apoyo en la higiene de espacios en el hogar, oficina o negocio",
+
+"Limpieza rápida gracias a su evaporación inmediata",
+    ],
   },
   {
     id: 5,
@@ -13,6 +36,18 @@ const productos = [
     imagen: "/alcoholpuro.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Alcoholes",
+         descripcion: `Alcohol etílico al 95% de alta pureza, utilizado como materia prima en la fabricación de productos de limpieza, desinfección y soluciones industriales.`,
+    advertencias:[
+      "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+      "Producto Inflamable"
+    ],
+    almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+     usos: [
+      "Materia prima.",
+    ],
   },
   {
     id: 8,
@@ -20,6 +55,18 @@ const productos = [
     imagen: "/combustol.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Alcoholes",
+       descripcion: `Alcohol para mechero de combustión estable, utilizado para mantener alimentos calientes en buffets y estaciones de servicio.`,
+      advertencias:[
+      "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+      "Producto Inflamble"
+    ],
+      modoDeUso: [
+      "Verter el alcohol en el recipiente metálico destinado para mechero.",
+
+"Colocar el mechero debajo del equipo para mantener la comida caliente.",
+
+"Encender cuidadosamente para generar una llama estable.",
+    ],
   },
   {
     id: 2,
@@ -28,7 +75,10 @@ const productos = [
     presentacion: "Galón de 3.78 Litros",
     descripcion: `MAXI GEL es un gel antibacterial para manos formulado con un 70% de alcohol, ideal para eliminar el 99.9% de virus, bacterias y gérmenes en segundos. Su poderosa fórmula ha sido desarrollada para combatir agentes como el H1N1 y el coronavirus, ofreciendo una higiene efectiva sin necesidad de enjuague.
 Su textura ligera permite una fácil aplicación y secado rápido, dejando tus manos limpias y seguras en todo momento. Perfecto para oficinas, comercios, escuelas, clínicas, hogares y cualquier entorno que requiera altos estándares de desinfección.`,
-    advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+advertencias:[
+      "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+      "Producto Inflamble"
+    ],
     almacenamiento: [
       "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
       "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
@@ -46,6 +96,8 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/JARDIN.jpg",
     presentacion: "Rollo 36x57",
     categoria: "Bolsas para Basura",
+           descripcion: `Bolsa negra para barril en rollo 36x57, resistente y de gran capacidad, ideal para el manejo de desechos.`,
+
   },
   {
     id: 109,
@@ -53,6 +105,8 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/HOGAR.webp",
     presentacion: "Rollo 23x32",
     categoria: "Bolsas para Basura",
+     descripcion: `Bolsa negra para basura 23x32 en rollo, resistente y práctica para uso diario en el hogar y negocio.`,
+
   },
   {
     id: 111,
@@ -60,6 +114,7 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/PAPELERA.webp",
     presentacion: "Rollo 18x24",
     categoria: "Bolsas para Basura",
+     descripcion: `Bolsa blanca para papelera 18x24 en rollo, práctica, resistente y con fragancia para uso diario.`,
   },
 
   // ===================== Car Wash =====================
@@ -68,7 +123,26 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     nombre: "ALUM, LIMPIADOR DE ALUMINIO",
     imagen: "/alum.webp",
     presentacion: "Galón de 3.78 Litros",
+        descripcion: `Producto formulado para la limpieza profunda de superficies de aluminio y acero inoxidable. Actúa eficazmente contra residuos de grasa, polvo y manchas, ayudando a mantener el aspecto original del material sin dañarlo.`,
     categoria: "Car Wash",
+   advertencias:[
+      "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+      "Material Corrosivo"
+    ],
+       almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+     modoDeUso: [
+      "Aplicar el producto directamente sobre la superficie de aluminio con un rociador o con una brocha, cubriendo bien el área a limpiar.", "Aplicar el producto directamente sobre la superficie de aluminio con un rociador o con una brocha, cubriendo bien el área a limpiar.",
+       "Dejar actuar el producto durante unos segundos para que afloje la grasa, la suciedad y las manchas.",
+        "Frotar suavemente la superficie con una esponja suave, un paño de microfibra o un cepillo de cerdas plásticas.",
+         "Enjuagar con abundante agua para retirar el producto y la suciedad desprendida.",
+          "Si es necesario, repetir el proceso en las áreas con suciedad más difícil.",
+             "Dejar secar o pasar un paño limpio y suave para mejorar el brillo final.",
+                
+    ],
+  
   },
   {
     id: 21,
@@ -76,6 +150,20 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/brillant.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Car Wash",
+     descripcion: `Producto diseñado exclusivamente para dar un brillo espectacular a sus llantas`,
+      advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+       advertencias:[
+      "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",  
+    ],
+    modoDeUso: [
+      "Lavar las llantas.",
+       "Dejar secar muy bien las llantas.",
+        "Vierta una pequeña cantidad de BRILLANT en una esponja.",
+         "Apliquelo a la llanta.",          
+    ],
+        usos: [
+      "Darle brillo a la llanta"
+    ],
   },
   {
     id: 3,
@@ -91,28 +179,97 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     usos: [
       "Limpieza de vidrios, espejos y cristales"
     ],
+      advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
     categoria: "Car Wash",
   },
   {
     id: 10,
-    nombre: "KRAM DESENGRASANTE",
+    nombre: "KRAM, DESENGRASANTE INDUSTRIAL",
     imagen: "/kram.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Car Wash",
+      almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+     descripcion: `Desengrasante industrial potente para remover grasa, aceite y suciedad pesada en equipos y superficies metálicas.`,
+      usos: [
+      "Limpieza de motores y piezas mecánicas",
+
+"Talleres automotrices",
+
+"Maquinaria industrial",
+
+
+"Herramientas y equipos de trabajo",
+    ],
+
+    modoDeUso: [
+      "Aplicar el desengrasante directamente sobre la superficie con brocha o rociador.",
+
+"Dejar actuar unos segundos para que afloje la grasa y la suciedad.",
+
+"Frotar con cepillo de cerdas plásticas en las áreas más sucias.",
+"Enjuagar con agua para retirar los residuos.",
+"Repetir el proceso si la suciedad es muy pesada.",
+    ],
   },
   {
     id: 45,
     nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS (8 LIBRAS)",
     imagen: "/tarro.webp",
     presentacion: "8 Libras",
+     descripcion: `Crema desengrasante para manos especialmente formulada para remover grasa, aceite y suciedad pesada después de trabajos mecánicos e industriales. Ideal para talleres, mecánicos, técnicos y personas que trabajan con maquinaria.`,
     categoria: "Car Wash",
+      almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+     usos: [
+      "Talleres mecánicos",
+
+"Personal que trabaja con motores y maquinaria",
+
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de crema en las manos.",
+
+"Frotar bien, especialmente en las áreas con grasa o suciedad.",
+
+"Continuar frotando hasta que la suciedad se desprenda.",
+"Quitar crema con papel o paño limpio.",
+
+    ],
   },
     {
     id: 63,
     nombre: "MANIX, CREMA DESENGRASANTE PARA MANOS (1 LIBRA)",
     imagen: "/una.webp",
     presentacion: "1 Libras",
+         descripcion: `Crema desengrasante para manos especialmente formulada para remover grasa, aceite y suciedad pesada después de trabajos mecánicos e industriales. Ideal para talleres, mecánicos, técnicos y personas que trabajan con maquinaria.`,
+  almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
     categoria: "Car Wash",
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+       usos: [
+      "Talleres mecánicos",
+
+"Personal que trabaja con motores y maquinaria",
+
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de crema en las manos.",
+
+"Frotar bien, especialmente en las áreas con grasa o suciedad.",
+
+"Continuar frotando hasta que la suciedad se desprenda.",
+"Quitar crema con papel o paño limpio.",
+
+    ],
   },
     {
     id: 65,
@@ -120,6 +277,24 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/dos.webp",
     presentacion: "2 Libras",
     categoria: "Car Wash",
+         descripcion: `Crema desengrasante para manos especialmente formulada para remover grasa, aceite y suciedad pesada después de trabajos mecánicos e industriales. Ideal para talleres, mecánicos, técnicos y personas que trabajan con maquinaria.`,
+
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+      usos: [
+      "Talleres mecánicos",
+
+"Personal que trabaja con motores y maquinaria",
+
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de crema en las manos.",
+
+"Frotar bien, especialmente en las áreas con grasa o suciedad.",
+
+"Continuar frotando hasta que la suciedad se desprenda.",
+"Quitar crema con papel o paño limpio.",
+
+    ],
   },
   {
     id: 12,
@@ -127,6 +302,29 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/foam.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Car Wash",
+     descripcion: `Shampoo para alfombras y telas ideal para limpiar asientos, interiores de vehículos y superficies textiles sin necesidad de usar agua.`,
+
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños. Utilice mascarilla, guantes y lentes de protección.",
+         usos: [
+      "Asientos de carro",
+
+"Sillones y muebles de tela",
+"Interiores de vehículos",
+
+    ],
+      almacenamiento: [
+      "Mantenga debidamente cerrado después de su uso. Cerrar con su tapa original. Nunca debe de tapar utilizando cubiertas de metal, algodón, gasa, corcho o papel",
+      "Debe de almacenarse en áreas limpias, secas, ventiladas y protegida de la luz"
+    ],
+        modoDeUso: [
+      "Aplicar el producto directamente sobre la tela.",
+
+"Frotar bien, especialmente en las áreas con grasa o suciedad.",
+
+"Continuar frotando hasta que la suciedad se desprenda.",
+"Retirar el exceso con un paño limpio y seco.",
+
+    ],
   },
   {
     id: 18,
@@ -134,6 +332,20 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/carro.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Car Wash",
+     descripcion: `Shampoo para carro que elimina suciedad y polvo, dejando la carrocería limpia, brillante y con agradable aroma.`,
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+         usos: [
+      "Lavado de carrocería",
+    ],
+           modoDeUso: [
+      "Diluir una pequeña cantidad de shampoo en un balde con agua y mover hasta que haga espuma.",
+
+"Aplicar sobre el vehículo con esponja o paño suave.",
+
+"Frotar para remover la suciedad.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 20,
@@ -141,6 +353,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/silicona.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Car Wash",
+     descripcion: `Silicona para tableros que da brillo y protección a plásticos, cuero y cuerina, con fragancia a cherry.`,
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+             usos: [
+      "Tablero del carro",
+        "Puertas y paneles interiores",
+          "Superficies plásticas",
+            "Asientos de cuero o cuerina",
+    ],
+            modoDeUso: [
+      "Aplicar una pequeña cantidad en un paño limpio o esponja.",
+
+"Distribuir sobre la superficie del tablero, plástico, cuero o cuerina.",
+
+"Esparcir de manera uniforme hasta cubrir el área.",
+
+    ],
   },
 
   // ===================== Cera liquida =====================
@@ -150,6 +378,24 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/class.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Cera liquida",
+    advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+     descripcion: `Cera líquida para pisos que protege, da brillo y mejora la apariencia de las superficies, dejando un acabado limpio y uniforme.`,
+               usos: [
+      "Pisos de cerámica",
+        "Mosaico y superficies similares",
+          "Hogares y oficinas",
+          
+    ],
+
+        modoDeUso: [
+      "Limpiar el piso previamente para retirar polvo y suciedad.",
+
+"Aplicar una pequeña cantidad de cera líquida con un trapeador o paño limpio.",
+
+"Distribuir de forma uniforme sobre la superficie.",
+"Dejar secar para que se forme el brillo protector.",
+
+    ],
   },
 
   // ===================== Desinfectantes para pisos =====================
@@ -159,6 +405,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/pino.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+     descripcion: `Desinfectante concentrado con aroma a pino que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 31,
@@ -166,6 +428,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/aylen.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma Aylen que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 42,
@@ -173,6 +451,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/bambu.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Bambú que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 32,
@@ -180,6 +474,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/blue.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Blue que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 33,
@@ -187,6 +497,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/bosques.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Bosques que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 34,
@@ -194,6 +520,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/canela.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Canela que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 17,
@@ -201,6 +543,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/cherry.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Cherry que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 36,
@@ -208,6 +566,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/citronela.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Citronela que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 35,
@@ -215,6 +589,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/frutal.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Frutal que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 41,
@@ -222,6 +612,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/lavanda.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Lavanda que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 37,
@@ -229,6 +635,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/limon.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Limón que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 38,
@@ -236,6 +658,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/manzana.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Manzana que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 39,
@@ -243,6 +681,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/mcanela.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Manzana Canela que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 40,
@@ -250,6 +704,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/mora.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Mora que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
   {
     id: 16,
@@ -257,6 +727,22 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/vida.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desinfectantes para pisos",
+      descripcion: `Desinfectante concentrado con aroma a Vida que desinfecta, limpia y deja un ambiente fresco y agradable.`,
+       advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+                usos: [
+      "Pisos de cerámica y cemento",
+        "Baños y sanitarios",
+          "Hogares, oficinas y negocios",  
+    ],
+          modoDeUso: [
+      "Diluir una pequeña cantidad del producto en agua.",
+
+"Aplicar con trapeador, paño o esponja sobre la superficie.",
+
+"Aplicar de forma uniforme toda el área.",
+"Dejar secar para que el aroma a pino permanezca en el ambiente.",
+
+    ],
   },
 
   // ===================== Desmanchadores y limpiadores =====================
@@ -266,6 +752,24 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/bacterin.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desmanchadores y limpiadores",
+     descripcion: `Desinfectante antibacterial que elimina bacterias y controla los malos olores en distintas superficies.`,
+        advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+          usos: [
+      "Pisos y superficies lavables",
+      "Baños y sanitarios",
+      "Áreas de alto tráfico",
+      "Superficies donde se requiere mayor higiene"
+    ],
+          modoDeUso: [
+      "Diluir el producto en agua según el nivel de limpieza deseado.",
+
+"Cubrir bien toda la superficie a desinfectar.",
+
+"Dejar actuar unos minutos para mejor efecto antibacterial.",
+"Enjuagar con agua para quitar el producto.",
+
+    ],
+
   },
   {
     id: 9,
@@ -273,6 +777,23 @@ Su textura ligera permite una fácil aplicación y secado rápido, dejando tus m
     imagen: "/cocina.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desmanchadores y limpiadores",
+     descripcion: `Desengrasante para cocina ideal para eliminar grasa y suciedad en estufas, campanas, azulejos y superficies lavables.`,
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+          usos: [
+      "Estufas y hornos",
+      "Campanas extractoras",
+      "Mesones y superficies de cocina",
+      "Equipos de cocina en hogares y negocios"
+    ],
+       modoDeUso: [
+      "Aplicar el producto directamente sobre la superficie con grasa.",
+
+"Dejar actuar unos segundos para que afloje la suciedad.",
+
+"Frotar con esponja, paño o cepillo si es necesario.",
+"Enjuagar con agua para quitar el producto.",
+
+    ],
   },
   {
     id: 1,
@@ -302,6 +823,24 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/star.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Desmanchadores y limpiadores",
+     descripcion: `Desmanchador para cerámica blanca ideal para sanitarios, pisos y superficies de baño.`,
+        usos: [
+      "Inodoros",
+      "Lavamanos",
+      "Azulejos de baño",
+      "Superficies con sarro o manchas de humedad"
+    ],
+    modoDeUso: [
+      "Aplicar el producto directamente sobre la zona manchada.",
+
+"Dejar actuar unos minutos para que afloje la suciedad.",
+
+"Frotar con esponja, cepillo suave o fibra.",
+"Enjuagar con abundante agua.",
+
+    ],
+     advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+
   },
 
   // ===================== Jabones =====================
@@ -311,6 +850,22 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/caninos.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Shampoo para perro con aroma a cherry, ideal para mantener el pelaje limpio, suave y fresco.`,
+ advertencias: "Dañino si es ingerido. Manténgase fuera del alcance de los niños.",
+    usos: [
+      "Ayuda a eliminar suciedad y malos olores",
+    ],
+      modoDeUso: [
+      "Mojar completamente el pelaje del perro con agua.",
+
+"Aplicar una pequeña cantidad de shampoo sobre el cuerpo.",
+
+"Masajear suavemente hasta formar espuma.",
+"Enjuagar con abundante agua hasta retirar todo el producto.",
+
+    ],
+      
+
   },
   {
     id: 43,
@@ -318,6 +873,21 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/cleaneraf.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Master Cleaner Aloe Fresh es un jabón líquido para manos que limpia eficazmente mientras deja una sensación de frescura y suavidad en la piel.`,
+   usos: [
+      "Limpieza diaria de manos",
+      "Ayuda a eliminar suciedad e impurezas",
+      "Ideal para baños, cocinas, oficinas y comercios"
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de jabón en las manos.",
+
+"Frotar entre las palmas, dedos y uñas durante unos segundos.",
+
+"Frotar suavemente hasta formar espuma.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 11,
@@ -325,6 +895,21 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/cleanerc.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Master Cleaner Cherry es un jabón líquido para manos que limpia eficazmente mientras deja una sensación de frescura y suavidad en la piel.`,
+   usos: [
+      "Limpieza diaria de manos",
+      "Ayuda a eliminar suciedad e impurezas",
+      "Ideal para baños, cocinas, oficinas y comercios"
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de jabón en las manos.",
+
+"Frotar entre las palmas, dedos y uñas durante unos segundos.",
+
+"Frotar suavemente hasta formar espuma.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 26,
@@ -332,6 +917,21 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/cleanerl.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Master Cleaner Limón es un jabón líquido para manos que limpia eficazmente mientras deja una sensación de frescura y suavidad en la piel.`,
+   usos: [
+      "Limpieza diaria de manos",
+      "Ayuda a eliminar suciedad e impurezas",
+      "Ideal para baños, cocinas, oficinas y comercios"
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de jabón en las manos.",
+
+"Frotar entre las palmas, dedos y uñas durante unos segundos.",
+
+"Frotar suavemente hasta formar espuma.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 25,
@@ -339,6 +939,21 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/cleanermgo.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Master Cleaner Mango es un jabón líquido para manos que limpia eficazmente mientras deja una sensación de frescura y suavidad en la piel.`,
+   usos: [
+      "Limpieza diaria de manos",
+      "Ayuda a eliminar suciedad e impurezas",
+      "Ideal para baños, cocinas, oficinas y comercios"
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de jabón en las manos.",
+
+"Frotar entre las palmas, dedos y uñas durante unos segundos.",
+
+"Frotar suavemente hasta formar espuma.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 27,
@@ -346,6 +961,21 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/cleanerm.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Master Cleaner Manzana es un jabón líquido para manos que limpia eficazmente mientras deja una sensación de frescura y suavidad en la piel.`,
+   usos: [
+      "Limpieza diaria de manos",
+      "Ayuda a eliminar suciedad e impurezas",
+      "Ideal para baños, cocinas, oficinas y comercios"
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad de jabón en las manos.",
+
+"Frotar entre las palmas, dedos y uñas durante unos segundos.",
+
+"Frotar suavemente hasta formar espuma.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 14,
@@ -353,6 +983,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/platox.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+ descripcion: `Platox es un jabón líquido para loza con aroma a limón, diseñado para eliminar grasa, restos de comida y suciedad en platos, vasos y utensilios de cocina.`,
+ usos: [
+      "Lavado de platos, vasos y cubiertos",
+    ],
+       modoDeUso: [
+      "Aplicar una pequeña cantidad en la esponja húmeda.",
+
+"Frotar los utensilios hasta formar espuma.",
+
+"Lavar platos, vasos y cubiertos normalmente.",
+"Enjuagar con abundante agua.",
+
+    ],
   },
   {
     id: 23,
@@ -360,6 +1003,18 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/tenaza.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Tenaz Aloe Fresh es un jabón líquido para ropa diseñado para limpiar profundamente las prendas, ayudando a remover manchas, suciedad y malos olores.`,
+ usos: [
+      "Limpieza profunda de prendas de vestir",
+       "Ideal para uso en el hogar o lavanderías",
+    ],
+       modoDeUso: [
+      "Agregar una cantidad adecuada de jabón directamente en la lavadora.",
+
+"Dejar que la lavadora realice el proceso normal.",
+
+
+    ],
   },
   {
     id: 49,
@@ -367,6 +1022,18 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/tenazf.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Tenaz Floral es un jabón líquido para ropa diseñado para limpiar profundamente las prendas, ayudando a remover manchas, suciedad y malos olores.`,
+ usos: [
+      "Limpieza profunda de prendas de vestir",
+       "Ideal para uso en el hogar o lavanderías",
+    ],
+       modoDeUso: [
+      "Agregar una cantidad adecuada de jabón directamente en la lavadora.",
+
+"Dejar que la lavadora realice el proceso normal.",
+
+
+    ],
   },
   {
     id: 22,
@@ -374,6 +1041,18 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/tenazl.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Tenaz Lavanda es un jabón líquido para ropa diseñado para limpiar profundamente las prendas, ayudando a remover manchas, suciedad y malos olores.`,
+ usos: [
+      "Limpieza profunda de prendas de vestir",
+       "Ideal para uso en el hogar o lavanderías",
+    ],
+       modoDeUso: [
+      "Agregar una cantidad adecuada de jabón directamente en la lavadora.",
+
+"Dejar que la lavadora realice el proceso normal.",
+
+
+    ],
   },
   {
     id: 24,
@@ -381,6 +1060,18 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/tenazm.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Jabones",
+     descripcion: `Tenaz Manzana es un jabón líquido para ropa diseñado para limpiar profundamente las prendas, ayudando a remover manchas, suciedad y malos olores.`,
+ usos: [
+      "Limpieza profunda de prendas de vestir",
+       "Ideal para uso en el hogar o lavanderías",
+    ],
+       modoDeUso: [
+      "Agregar una cantidad adecuada de jabón directamente en la lavadora.",
+
+"Dejar que la lavadora realice el proceso normal.",
+
+
+    ],
   },
     {
     id: 200,
@@ -491,6 +1182,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/aloe.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Shampoo y acondicionadores",
+     descripcion: `Shampoo Aloe Vera para cabello, formulado para limpiar suavemente mientras aporta frescura y cuidado al cuero cabelludo.`,
+      usos: [
+      "Limpieza suave del cabello y cuero cabelludo",
+       "Apto para uso en hogares, hoteles o salones",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Aplicar una pequeña cantidad de shampoo en la mano.",
+"Masajear suavemente el cuero cabelludo hasta formar espuma.",
+"Distribuir el producto por todo el cabello.",
+"Enjuagar con abundante agua.",
+    ],
   },
   {
     id: 46,
@@ -498,6 +1202,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/menta.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Shampoo y acondicionadores",
+    descripcion: `Shampoo Menta para cabello, formulado para limpiar suavemente mientras aporta frescura y cuidado al cuero cabelludo.`,
+      usos: [
+      "Limpieza suave del cabello y cuero cabelludo",
+       "Apto para uso en hogares, hoteles o salones",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Aplicar una pequeña cantidad de shampoo en la mano.",
+"Masajear suavemente el cuero cabelludo hasta formar espuma.",
+"Distribuir el producto por todo el cabello.",
+"Enjuagar con abundante agua.",
+    ],
   },
   {
     id: 47,
@@ -505,6 +1222,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/papaya.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Shampoo y acondicionadores",
+    descripcion: `Shampoo Papaya para cabello, formulado para limpiar suavemente mientras aporta frescura y cuidado al cuero cabelludo.`,
+      usos: [
+      "Limpieza suave del cabello y cuero cabelludo",
+       "Apto para uso en hogares, hoteles o salones",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Aplicar una pequeña cantidad de shampoo en la mano.",
+"Masajear suavemente el cuero cabelludo hasta formar espuma.",
+"Distribuir el producto por todo el cabello.",
+"Enjuagar con abundante agua.",
+    ],
   },
 
   // ===================== Suavizantes =====================
@@ -514,6 +1244,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/flor.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Suavizantes",
+     descripcion: `Suaviking Flor de Luna es un suavizante para ropa diseñado para dejar las prendas suaves, frescas y con un aroma delicado y duradero.`,
+   usos: [
+      "Suaviza las fibras de la ropa",
+       "Apto para todo tipo de ropa lavable",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Agregar una pequeña cantidad de suavizante.",
+"Distribuir en el compartimiento del suavizante o directamente en el agua.",
+"No aplicar directamente sobre la ropa seca.",
+"Dejar actuar durante el enjuague final y escurrir normalmente.",
+    ],
   },
   {
     id: 19,
@@ -521,6 +1264,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/girasol.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Suavizantes",
+      descripcion: `Suaviking Girasol es un suavizante para ropa diseñado para dejar las prendas suaves, frescas y con un aroma delicado y duradero.`,
+   usos: [
+      "Suaviza las fibras de la ropa",
+       "Apto para todo tipo de ropa lavable",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Agregar una pequeña cantidad de suavizante.",
+"Distribuir en el compartimiento del suavizante o directamente en el agua.",
+"No aplicar directamente sobre la ropa seca.",
+"Dejar actuar durante el enjuague final y escurrir normalmente.",
+    ],
   },
   {
     id: 29,
@@ -528,6 +1284,19 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/tropical.webp",
     presentacion: "Galón de 3.78 Litros",
     categoria: "Suavizantes",
+      descripcion: `Suaviking Tropical es un suavizante para ropa diseñado para dejar las prendas suaves, frescas y con un aroma delicado y duradero.`,
+   usos: [
+      "Suaviza las fibras de la ropa",
+       "Apto para todo tipo de ropa lavable",
+    ],
+       modoDeUso: [
+      "Mojar completamente el cabello con agua.",
+
+"Agregar una pequeña cantidad de suavizante.",
+"Distribuir en el compartimiento del suavizante o directamente en el agua.",
+"No aplicar directamente sobre la ropa seca.",
+"Dejar actuar durante el enjuague final y escurrir normalmente.",
+    ],
   },
 
 
@@ -538,6 +1307,7 @@ Ideal para hogares, negocios y entornos industriales.`,
     imagen: "/glade.webp",
     presentacion: "Lata de 400ml",
     categoria: "Ambientadores",
+     descripcion: `Desodorante en spray varios aromas`,
   },
  {
     id: 131,
