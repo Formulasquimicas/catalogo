@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import productos from "./data/productos";
-import { Link } from "react-router-dom";
+import ProductCard from "./components/ProductCard";
+import EstanteCategoria from "./components/EstanteCategoria";
+import CuadriculaCategorias from "./components/CuadriculaCategorias";
+import CarruselDestacados from "./components/CarruselDestacados";
+import Reveal from "./components/Reveal";
+import { Droplets, Sparkles } from "lucide-react";
+import { filtrarProductos } from "./utils/buscar";
 
 function Galeria() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Todos");
-  const [imagenesLoaded, setImagenesLoaded] = useState({});
+  const [searchParams] = useSearchParams();
+  const consulta = (searchParams.get("q") || "").trim();
+  const resultadosBusqueda = consulta ? filtrarProductos(productos, consulta) : [];
+  const seccionResultadosRef = useRef(null);
+  const cuadriculaRef = useRef(null);
 
   const categorias = ["Todos", ...new Set(productos.map(p => p.categoria))];
 
@@ -13,23 +24,57 @@ function Galeria() {
       ? productos
       : productos.filter(p => p.categoria === categoriaSeleccionada);
 
-  const handleImageLoad = (id) => {
-    setImagenesLoaded(prev => ({ ...prev, [id]: true }));
-  };
+  // Al iniciar/actualizar una búsqueda, llevar la vista a los resultados.
+  useEffect(() => {
+    if (!consulta || !seccionResultadosRef.current) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    seccionResultadosRef.current.scrollIntoView({
+      behavior: reduce ? "auto" : "smooth",
+      block: "start",
+    });
+  }, [consulta]);
+
+  // Al elegir una categoría ("Ver todos ›" o la cuadrícula de categorías),
+  // llevar la vista a la cuadrícula de productos. Si no, al colapsar los
+  // estantes la página queda más corta y el scroll se queda en el footer.
+  useEffect(() => {
+    if (categoriaSeleccionada === "Todos" || !cuadriculaRef.current) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    cuadriculaRef.current.scrollIntoView({
+      behavior: reduce ? "auto" : "smooth",
+      block: "start",
+    });
+  }, [categoriaSeleccionada]);
 
   return (
     <div className="w-full min-h-screen bg-gray-50">
       
       {/* Hero Section - Mensaje para todos */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 py-10 sm:py-14 text-center">
+      <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white">
+        {/* Fondo decorativo (sin imágenes, hecho con CSS) */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
+          <div className="absolute top-8 right-0 w-80 h-80 rounded-full bg-cyan-300/10 blur-3xl"></div>
+          <div className="absolute -bottom-24 left-1/3 w-72 h-72 rounded-full bg-blue-400/20 blur-3xl"></div>
+          <div
+            className="absolute inset-0 opacity-[0.06]"
+            style={{
+              backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+              backgroundSize: "22px 22px",
+            }}
+          ></div>
+          <Droplets className="absolute top-6 left-4 sm:left-10 w-20 h-20 sm:w-28 sm:h-28 text-white/[0.07]" strokeWidth={1.5} />
+          <Sparkles className="absolute bottom-6 right-4 sm:right-12 w-24 h-24 sm:w-32 sm:h-32 text-white/[0.07]" strokeWidth={1.5} />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-14 sm:py-20 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
             Productos Químicos de Calidad
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-6 max-w-3xl mx-auto">
             Para empresas, hogares y comercios. Más de 30 años de experiencia.
           </p>
-          
+
           {/* CTAs principales */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
@@ -77,124 +122,113 @@ function Galeria() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
-        
-        {/* Sección de categorías */}
-        <div className="mb-8">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
-            Explora Nuestros Productos
-          </h2>
-          
-          {/* Filtros - Scroll horizontal en móvil, múltiples filas en desktop */}
-          <div className="overflow-x-auto md:overflow-x-visible pb-2 -mx-4 px-4 md:mx-0 md:px-0 hide-scrollbar">
-            <div className="flex gap-2 sm:gap-3 min-w-max md:min-w-0 md:flex-wrap md:justify-center">
-              {categorias.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setCategoriaSeleccionada(cat)}
-                  className={`
-                    flex-shrink-0 font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full 
-                    transition-all duration-300 text-sm sm:text-base whitespace-nowrap
-                    ${categoriaSeleccionada === cat
-                      ? "bg-blue-700 text-white shadow-lg scale-105"
-                      : "bg-white text-gray-700 hover:bg-blue-50 shadow-md hover:shadow-lg active:scale-95"
-                    }
-                  `}
+      <div ref={seccionResultadosRef} className="max-w-7xl mx-auto px-4 py-8 sm:py-12 scroll-mt-24">
+
+        {consulta ? (
+          /* Vista de resultados de búsqueda (Enter en el buscador) */
+          <>
+            <div className="flex items-center justify-between gap-3 flex-wrap mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
+                Resultados para «{consulta}»{" "}
+                <span className="text-blue-700">({resultadosBusqueda.length})</span>
+              </h2>
+              <Link
+                to="/"
+                className="text-sm font-bold text-blue-700 hover:text-blue-800 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1"
+              >
+                ✕ Quitar búsqueda
+              </Link>
+            </div>
+
+            {resultadosBusqueda.length > 0 ? (
+              <Reveal className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                {resultadosBusqueda.map((prod) => (
+                  <ProductCard key={prod.id} prod={prod} />
+                ))}
+              </Reveal>
+            ) : (
+              <div className="text-center py-20">
+                <div className="text-6xl mb-4">🔍</div>
+                <p className="text-gray-500 text-lg">
+                  No se encontraron productos para «{consulta}»
+                </p>
+                <Link
+                  to="/"
+                  className="inline-block mt-4 text-blue-700 font-bold hover:underline"
                 >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+                  Ver todos los productos
+                </Link>
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            {/* Carrusel de productos destacados */}
+            <Reveal className="mb-10">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+                Productos Destacados
+              </h2>
+              <CarruselDestacados />
+            </Reveal>
 
-        {/* Contador */}
-        <div className="text-center mb-6">
-          <p className="text-sm sm:text-base text-gray-600">
-            Mostrando <span className="font-bold text-blue-700">{productosFiltrados.length}</span> productos
-          </p>
-        </div>
+            {/* Sección de categorías */}
+            <Reveal className="mb-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+                Explora Nuestros Productos
+              </h2>
 
-        {/* Grid de productos - Estilo E-Commerce */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-          {productosFiltrados.map((prod) => (
-            <div
-              key={prod.id}
-              className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group"
-            >
-              {/* Badge superior */}
-              <div className="relative">
-                {/* Imagen */}
-                <Link to={`/producto/${prod.id}`} className="block">
-                  <div className="relative bg-gray-100 aspect-square overflow-hidden">
-                    {/* Skeleton */}
-                    {!imagenesLoaded[prod.id] && (
-                      <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
-                    )}
-                    
-                    <img
-                      src={prod.imagen}
-                      alt={prod.nombre}
-                      loading="lazy"
-                      onLoad={() => handleImageLoad(prod.id)}
-                      className={`
-                        w-full h-full object-contain p-3 sm:p-4 transition-all duration-500
-                        group-hover:scale-110
-                        ${imagenesLoaded[prod.id] ? 'opacity-100' : 'opacity-0'}
-                      `}
+              {/* Selector de categorías en cuadrícula (usa el mismo estado de filtro) */}
+              <CuadriculaCategorias
+                categorias={categorias}
+                productos={productos}
+                seleccionada={categoriaSeleccionada}
+                onSeleccionar={setCategoriaSeleccionada}
+              />
+            </Reveal>
+
+            {categoriaSeleccionada === "Todos" ? (
+              /* Vista por defecto: un estante (carrusel) por cada categoría */
+              <div>
+                {categorias
+                  .filter((cat) => cat !== "Todos")
+                  .map((cat) => (
+                    <EstanteCategoria
+                      key={cat}
+                      categoria={cat}
+                      productos={productos.filter((p) => p.categoria === cat)}
+                      onVerTodos={setCategoriaSeleccionada}
                     />
-                  </div>
-                </Link>
-
-                {/* Badge de categoría */}
-                <div className="absolute top-2 left-2 bg-blue-700 text-white px-2 py-1 rounded-lg text-[10px] sm:text-xs font-bold shadow-lg">
-                  {prod.categoria}
-                </div>
+                  ))}
               </div>
-
-              {/* Info del producto */}
-              <div className="p-3 sm:p-4">
-                <Link to={`/producto/${prod.id}`}>
-                  <h3 className="text-sm sm:text-base font-bold text-gray-800 mb-2 line-clamp-2 min-h-[40px] sm:min-h-[48px] group-hover:text-blue-700 transition-colors">
-                    {prod.nombre}
-                  </h3>
-                </Link>
-                
-                {prod.presentacion && (
-                  <p className="text-xs sm:text-sm text-gray-500 mb-3">
-                    📦 {prod.presentacion}
+            ) : (
+              /* Categoría seleccionada: cuadrícula clásica de 2 columnas */
+              <>
+                {/* Contador */}
+                <div ref={cuadriculaRef} className="text-center mb-6 scroll-mt-24">
+                  <p className="text-sm sm:text-base text-gray-600">
+                    Mostrando{" "}
+                    <span className="font-bold text-blue-700">{productosFiltrados.length}</span>{" "}
+                    productos
                   </p>
-                )}
-
-                {/* Botones de acción */}
-                <div className="space-y-2">
-                  <Link
-                    to={`/producto/${prod.id}`}
-                    className="block w-full bg-blue-700 hover:bg-blue-800 text-white text-xs sm:text-sm font-bold py-2 sm:py-2.5 px-3 rounded-lg text-center transition-all shadow-md hover:shadow-lg active:scale-95"
-                  >
-                    Ver Detalles
-                  </Link>
-                  
-                  <a
-                    href={`https://wa.me/50432370262?text=Hola, me interesa: ${prod.nombre}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-green-500 hover:bg-green-600 text-white text-xs sm:text-sm font-bold py-2 sm:py-2.5 px-3 rounded-lg text-center transition-all shadow-md hover:shadow-lg active:scale-95"
-                  >
-                    💬 Consultar
-                  </a>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Sin productos */}
-        {productosFiltrados.length === 0 && (
-          <div className="text-center py-20">
-            <div className="text-6xl mb-4">📦</div>
-            <p className="text-gray-500 text-lg">No hay productos en esta categoría</p>
-          </div>
+                {/* Grid de productos - Estilo E-Commerce */}
+                <Reveal className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                  {productosFiltrados.map((prod) => (
+                    <ProductCard key={prod.id} prod={prod} />
+                  ))}
+                </Reveal>
+
+                {/* Sin productos */}
+                {productosFiltrados.length === 0 && (
+                  <div className="text-center py-20">
+                    <div className="text-6xl mb-4">📦</div>
+                    <p className="text-gray-500 text-lg">No hay productos en esta categoría</p>
+                  </div>
+                )}
+              </>
+            )}
+          </>
         )}
       </div>
 
